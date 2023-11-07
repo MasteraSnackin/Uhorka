@@ -1,0 +1,250 @@
+/* Find comments in styles.css */
+.navigation-links-nav {  
+  flex: 0 0 auto; /* Align content horizontally */  
+  display: flex; /* Use flexbox layout */  
+  align-items: center; /* Center items vertically */  
+  flex-direction: row; /* Define the direction of items in a flex container */
+}
+.navigation-links-navlink {
+  /* Link style, color, and font */
+  color: #ffffff; /* White text */
+  transition: 0.3s; /* Smooth color transition */
+  font-family: "8-bit Operator+ 8"; /* Retro-style font */
+  text-decoration: none; /* No underline */
+ }
+ .navigation-links-navlink:hover {
+  animation-fill-mode: var(--dl-color-danger-300); /* hover animation */
+ }
+ .navigation-links-navlink1 {
+  color: #ffffff; /* white text color */
+  transition: 0.3s; /* smooth color transition */
+  font-family: "8-bit Operator+ 8"; /* pixelated font style */
+  margin-left: var(--dl-space-space-twounits); /* margin spacing */
+  text-decoration: none; /* removes underline from text */
+ }
+ .navigation-links-navlink1:hover {
+  animation-fill-mode: var(--dl-color-danger-300); /* Set color on hover */
+ }
+ .navigation-links-navlink2 {
+  color: #ffffff; /* white text color */
+  transition: 0.3s; /* smooth transition */
+  font-family: "8-bit Operator+ 8"; /* retro font style */
+  margin-left: var(--dl-space-space-twounits); /* dynamic margin */
+  text-decoration: none; /* removes underline */
+}
+.navigation-links-navlink2:hover {
+  animation-fill-mode: var(--dl-color-danger-300); /* hover animation */
+}
+.navigation-links-navlink3 {
+  color: #ffffff; /* white text color */
+  transition: 0.3s; /* smooth transition */
+  font-family: "8-bit Operator+ 8"; /* retro font style */
+  margin-left: var(--dl-space-space-twounits); /* space from left */
+  text-decoration: none; /* no underline */
+ }
+ .navigation-links-navlink3:hover {
+  animation-fill-mode: var(--dl-color-danger-300); /* Changes color on hover */
+ }
+ .navigation-links-navlink4 {
+  color: #ffffff; /* white text color */
+  transition: 0.3s; /* smooth transition */
+  font-family: "8-bit Operator+ 8"; /* retro font style */
+  margin-left: var(--dl-space-space-twounits); /* left margin for space */
+  text-decoration: none; /* no underline for links */
+ }
+ .navigation-links-navlink4:hover {
+  animation-fill-mode: var(--dl-color-danger-300); /* Changes color on hover */
+ }
+
+
+
+
+
+
+
+
+
+
+
+/* Different layouts for different screens */
+
+@media(max-width: 767px) {
+  .navigation-links-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navigation-links-navlink {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-navlink1 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-navlink2 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-navlink3 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-navlink4 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .navigation-links-nav {
+    width: 157px;
+    height: 176px;
+    justify-content: flex-start;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.home-container {
+  /* Container styling */
+  width: 100%; /* Set width to 100% */
+  display: flex; /* Display as flex */
+  overflow: auto; /* Allow scrolling */
+  min-height: 100vh; /* Set minimum height to 100% of viewport height */
+  align-items: center; /* Center items vertically */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items to start */
+  background-color: #000000; /* Set background color to black */
+ }
+.home-header {
+  /* Header styling */
+  width: 100%; /* Full width */
+  height: 195px; /* Header height */
+  display: flex; /* Flexbox layout */
+  max-width: var(--dl-size-size-maxwidth); /* Max width variable */
+  align-items: center; /* Center align items */
+  padding-top: var(--dl-space-space-fourunits); /* Top padding variable */
+  padding-left: var(--dl-space-space-threeunits); /* Left padding variable */
+  padding-right: var(--dl-space-space-threeunits); /* Right padding variable */
+  flex-direction: column; /* Column layout */
+  padding-bottom: var(--dl-space-space-twounits); /* Bottom padding variable */
+ }
+ .home-navlink {  
+  display: contents; /* Wrap all children inside the parent */
+ }
+.home-text {
+  /* Positioning */
+  top: 16px;
+  left: 0px;
+
+  color: rgb(255, 255, 255); /* text color */
+  right: 0px; /* positioing */
+  margin: auto; /* center alignment */
+  position: absolute; /* positioning method */
+  font-size: 70px; /* font size */
+  font-style: normal; /* font style */
+  text-align: center; /* text alignment */
+  font-family: "BleedingPixels"; /* font family */
+  font-weight: 400; /* font weight */
+  text-decoration: none; /* remove underline */
+}
+.home-nav {  
+  border: 2px dashed rgba(120, 120, 120, 0.4); /* Dashed border for home navigation */
+ }
+.home-separator {
+  /* creates white separator */
+  width: 100%;
+  height: 1px;
+  margin-top: var(--dl-space-space-threeunits);
+  margin-bottom: var(--dl-space-space-unit);
+  background-color: #ffffff;
+}
+.home-container1 {
+  /* Container positioning */
+  top: 249px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+
+  /* Alignment and orientation */
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home-text1 {
+  /* look up to the .home-text */
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  align-self: center;
+  font-family: "BleedingPixels";
+}
+.home-text5 {
+  /* look up to the .home-text */
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  align-self: center;
+  font-family: "BleedingPixels";
+}
+.home-image {
+  /* Image container position */
+  top: 338px;
+  left: 0px;
+  right: 0px;
+ 
+  /* Image dimensions */
+  width: 458px;
+  height: 527px;
+ 
+  /* Center image */
+  margin: auto;
+ 
+  /* Set positioning context */
+  position: absolute;
+ 
+  /* Fit image to container */
+  object-fit: cover;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px) {
+  .home-header {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .home-nav {
+    display: none;
+  }
+  .home-separator {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+}
+@media(max-width: 479px) {
+  .home-header {
+    padding: var(--dl-space-space-unit);
+  }
+  .home-separator {
+    margin-top: var(--dl-space-space-unit);
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}

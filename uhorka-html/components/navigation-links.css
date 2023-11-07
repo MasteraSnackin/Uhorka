@@ -1,0 +1,100 @@
+.navigation-links-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navigation-links-navlink {
+  color: #ffffff;
+  transition: 0.3s;
+  font-family: "8-bit Operator+ 8";
+  text-decoration: none;
+}
+.navigation-links-navlink:hover {
+  animation-fill-mode: var(--dl-color-danger-300);
+}
+.navigation-links-navlink1 {
+  color: #ffffff;
+  transition: 0.3s;
+  font-family: "8-bit Operator+ 8";
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.navigation-links-navlink1:hover {
+  animation-fill-mode: var(--dl-color-danger-300);
+}
+.navigation-links-navlink2 {
+  color: #ffffff;
+  transition: 0.3s;
+  font-family: "8-bit Operator+ 8";
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.navigation-links-navlink2:hover {
+  animation-fill-mode: var(--dl-color-danger-300);
+}
+.navigation-links-navlink3 {
+  color: #ffffff;
+  transition: 0.3s;
+  font-family: "8-bit Operator+ 8";
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.navigation-links-navlink3:hover {
+  animation-fill-mode: var(--dl-color-danger-300);
+}
+.navigation-links-navlink4 {
+  color: #ffffff;
+  transition: 0.3s;
+  font-family: "8-bit Operator+ 8";
+  margin-left: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.navigation-links-navlink4:hover {
+  animation-fill-mode: var(--dl-color-danger-300);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px) {
+  .navigation-links-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navigation-links-navlink {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-navlink1 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-navlink2 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-navlink3 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-navlink4 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .navigation-links-nav {
+    width: 157px;
+    height: 176px;
+    justify-content: flex-start;
+  }
+}

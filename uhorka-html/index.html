@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!-- Structure of HTML -->
+<html lang="en"> <!-- Language used in the document -->
+
+  <head> <!-- Head of the webpage (its located on the top) -->
+    <title>Uhorka</title> <!-- Set the title of the webpage head to "Uhorka" -->
+
+    <!-- Meta tags + social media sharing and responsive design -->
+    <meta property="og:title" content="Uhorka" />  <!-- If shared on social media this tag is used to create link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Set defaults across different screen sizes -->
+    <meta charset="utf-8" /> <!-- Encoding for webpage -->
+
+
+    <!-- Reset CSS styles for this HTML -->
+    <!-- Reset style sheets for browser compatibility-->
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;} /* line height property */
+      body {  margin: 0;} /* removes default marging from <body> */
+      * {  box-sizing: border-box;  border-width: 0;  border-style: solid;} /* Changes default box-sizing */
+      p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;} /* removes defaulr margin and padding from listed elements */
+      button {  background-color: transparent;} /* Background collor of the button is set to transparent */
+      button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;} /* Reset the font and margin properties */
+      button,select {  text-transform: none;} /* Reset text transform */
+      button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;} /* Consistent appearance for buttons in Firefox */
+      button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;} /* Removes the default focus styles for buttons in Firefox */
+      button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;} /* Set a focus outline style for buttons in Firefox */
+      a {  color: inherit;  text-decoration: inherit;} /* Anchor elements (<a>) inherit their parent's color and text-decoration properties */
+      input {  padding: 2px 4px;} /* Sets padding for input elements */
+      img {  display: block;} /* Changes the default display property for images to "block" */
+      html { scroll-behavior: smooth  } /* Enables smooth scrolling behavior for HTML elements. */
+    </style>
+
+    <!-- Define default styles for HTML elements -->
+    <!-- Applied by default unless overridden in css-->
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter; /* Sets default font for HTML */
+        font-size: 16px; /* Font size */
+      }
+
+      body {
+        /* Defaults for body */
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+
+    <!-- Link to an external stylesheet for the "Inter" font from Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+  </head>
+
+  <body>
+
+    <!-- Link to an external stylesheet "style.css" in the same directory -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <div>
+
+      <!-- Link to an external stylesheet "index.css" in the same directory -->
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container"> <!-- Container for the webpage content -->
+        
+        <!-- Navigation bar -->
+        <header data-role="Accordion" class="home-header"> <!-- Header section with some data attributes and class "home-header" -->
+          <a href="index.html" class="home-navlink"> <!-- Link to the homepage (index.html) -->
+            <h1 class="home-text">Uhorka</h1> <!-- Heading 1 with the text "Uhorka" -->
+          </a>
+          <nav class="home-nav"></nav> <!-- Navigation menu container -->
+          <div class="home-separator"></div> <!-- Separator element -->
+          <nav class="navigation-links-nav navigation-links-root-class-name19"> <!-- Navigation menu with class and links -->
+            <a href="about.html" class="navigation-links-navlink"> <!-- Link to "log-in.html" with the text "Log in" -->
+              <span>About</span>
+            </a>
+            <a href="log-in.html" class="navigation-links-navlink1"> <!-- Link to "about.html" with the text "About" -->
+              <span>Log in</span>
+            </a>
+            <a href="register.html" class="navigation-links-navlink2"> <!-- Link to "register.html" with the text "Register" -->
+              <span>Register</span>
+            </a>
+            <a href="standalone.html" class="navigation-links-navlink3"> <!-- Link to "standalone.html" with the text "Standalone" -->
+              <span>Standalone</span>
+            </a>
+            <a href="leaderboards.html" class="navigation-links-navlink4"> <!-- Link to "leaderboards.html" with the text "Leaderboards" -->
+              <span>Leaderboards</span>
+            </a>
+          </nav>
+        </header>
+        <div class="home-container1"> <!-- Container for additional content -->
+          <span class="home-text1">
+            <span>Welcome inside</span> <!-- Text "Welcome inside" -->
+            <br /> <!-- Line break -->
+            <span></span>
+          </span>
+          <span class="home-text5">the JAR</span> <!-- Text "the JAR" -->
+        </div>
+
+        <!-- Image with it's path "images\bloody pickle.png" -->
+        <img
+          alt="image"
+          src="images\bloody pickle.png"
+          class="home-image"
+        />
+
+      </div>
+    </div>
+  </body>
+
+</html>

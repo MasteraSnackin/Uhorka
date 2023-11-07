@@ -1,0 +1,130 @@
+@font-face {
+  /* Declare 8-bit Operator+ font */
+  font-family: "8-bit Operator+";
+  font-style: normal;
+  font-format: truetype;
+  font-weight: 700;
+  src: url("public/fonts/8bitoperatorplus8-bold11.ttf") ;
+}
+@font-face {
+  /* Declare BleedingPixels font */
+  font-family: "BleedingPixels";
+  font-style: normal;
+  font-format: truetype;
+  font-weight: 500;
+  src: url("public/fonts/bleedingpixels.ttf") ;
+}
+@font-face {
+  /* Declare 8-bit Operator+ 8 font */
+  font-family: "8-bit Operator+ 8";
+  font-style: normal;
+  font-format: truetype;
+  font-weight: 700;
+  src: url("public/fonts/8bitoperatorplus8-bold.ttf") ;
+}
+:root {
+  /*-colors used in html*/
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-size-size-maxwidth: 1400px;
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-threeunits: 48px;
+  --dl-space-space-oneandhalfunits: 24px;
+}
+
+.button {
+  
+  color: var(--dl-color-gray-black); /* set button text color */  
+  display: inline-block; /* set button display as inline block */  
+  padding: 0.5rem 1rem; /* set button padding */
+
+  /* set button border color and width */
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  
+  border-radius: 4px; /* set button border radius */  
+  background-color: var(--dl-color-gray-white);/* set button background color */
+ }
+ .input {  
+  color: var(--dl-color-gray-white); /* Text color, gray black */  
+  cursor: auto; /* Cursor, auto */  
+  padding: 0.5rem 1rem; /* Padding, 0.5rem 1rem */  
+  border-color: var(--dl-color-gray-black); /* Border color, gray black */  
+  border-width: 1px; /* Border width, 1px */  
+  border-radius: 4px; /* Border radius, 4px */  
+  background-color: var(--dl-color-gray-white);/* Background color, gray white */
+ }
+ .textarea {  
+  color: var(--dl-color-gray-black); /* set text color to gray-black */  
+  cursor: auto; /* set cursor to auto */  
+  padding: 0.5rem; /* add padding to the textarea */
+
+  /* set border color, width, and radius */
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px; 
+  
+  background-color: var(--dl-color-gray-white); /* set background color to gray-white */
+ }
+ .list {  
+  width: 100%; /* 100% width of parent container */  
+  margin: 1em 0px 1em 0px; /* Vertical margin between list and other elements */  
+  display: block; /* Display as a block-level element */  
+  padding: 0px 0px 0px 1.5rem; /* Remove padding and indentation from list items */  
+  list-style-type: none; /* Remove bullet points from list items */  
+  list-style-position: outside;/* Position list markers outside of list items */
+}
+ .list-item {  
+  display: list-item; /* Style list items */
+ }
+.teleport-show {
+  /* Define the show class for teleporting elements */  
+  display: flex !important; /* Set display to flex and override any previous settings */  
+  transform: none !important; /* Reset transform property to none and override any previous settings */
+ }
+ .Heading {
+  /* 32px Inter bold, line-height 1.15, text-transform none, text-decoration none */
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+ }
+.Content {
+  /* Font Style & Sizing */
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
