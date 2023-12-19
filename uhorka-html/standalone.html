@@ -4,44 +4,51 @@
 <title>Uhorka</title>
 <style>
   body {
-    text-align: center; /* Center the canvas and other elements */
-    background-image: url('images/background.png'); /* Add your background image */
-    background-size: cover; /* Make the background cover the entire page */
     margin: 0;
     padding: 0;
-    position: relative; /* Needed for absolute positioning of the button */
-    height: 100vh; /* Full height */
+    background-image: url('images/background.png'); /* Add your background image */
+    background-size: cover; /* Make the background cover the entire page */
+    font-family: 'YourFontName', sans-serif; /* Replace 'YourFontName' with your font name */
   }
 
   #gameWrapper {
-    position: relative; /* Needed for absolute positioning of the button within this container */
+    text-align: center; /* Center the canvas */
+    position: relative; /* Relative position for absolute positioning of the button */
+    padding-top: 20px; /* Space for the logo */
   }
 
   #logo {
     width: 100px; /* Set the logo size */
     height: 100px;
-    margin-bottom: 20px; /* Space between the logo and the canvas */
+    display: block; /* Block display to allow for margin auto */
+    margin: 0 auto 20px auto; /* Center the logo with automatic margins */
   }
 
   #gameCanvas {
     border: 1px solid #000;
-    max-width: 100%; /* Make the canvas responsive */
-    height: auto;
+    display: inline-block; /* Inline-block for centering and proper margin */
+    width: 960px;
+    height: 640px;
   }
 
   #backButton {
     position: absolute;
     right: 10px;
     bottom: 10px;
-    font-family: 'YourFontName', sans-serif; /* Replace 'YourFontName' with your font name */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline from text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Cursor pointer for button hover */
   }
 </style>
 </head>
 <body>
 
 <div id="gameWrapper">
-  <img id="logo" src="images/logo.png" alt="Game Logo"> <!-- Logo image -->
-  <canvas id="gameCanvas" width="960" height="640"></canvas>
+  <img id="logo" src="images/logo.png" alt="Game Logo" /> <!-- Logo image -->
+  <canvas id="gameCanvas"></canvas>
   <button id="backButton" onclick="window.location.href='index.html'">Back to Home</button>
 </div>
 
