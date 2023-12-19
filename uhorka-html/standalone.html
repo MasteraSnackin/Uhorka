@@ -1,92 +1,50 @@
-<!DOCTYPE html> <!-- Find comments in index.html -->
-<html lang="en">
-  <head>
-    <title>Standalone - Uhorka</title>
-    <meta property="og:title" content="Standalone - Uhorka" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uhorka</title>
+<style>
+  body {
+    text-align: center; /* Center the canvas and other elements */
+    background-image: url('images/background.png'); /* Add your background image */
+    background-size: cover; /* Make the background cover the entire page */
+    margin: 0;
+    padding: 0;
+    position: relative; /* Needed for absolute positioning of the button */
+    height: 100vh; /* Full height */
+  }
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}
-      body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}
-      p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}
-      button {  background-color: transparent;}
-      button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}
-      button,select {  text-transform: none;}
-      button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}
-      button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}
-      button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}
-      a {  color: inherit;  text-decoration: inherit;}
-      input {  padding: 2px 4px;}
-      img {  display: block;}
-      html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
+  #gameWrapper {
+    position: relative; /* Needed for absolute positioning of the button within this container */
+  }
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+  #logo {
+    width: 100px; /* Set the logo size */
+    height: 100px;
+    margin-bottom: 20px; /* Space between the logo and the canvas */
+  }
 
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-  </head>
-  <body>
-    <link rel="stylesheet" href="./style.css" /> <!-- .css ref-->
-    <div>
-      <link href="./standalone.css" rel="stylesheet" />
+  #gameCanvas {
+    border: 1px solid #000;
+    max-width: 100%; /* Make the canvas responsive */
+    height: auto;
+  }
 
-      <div class="standalone-container">
+  #backButton {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-family: 'YourFontName', sans-serif; /* Replace 'YourFontName' with your font name */
+  }
+</style>
+</head>
+<body>
 
-        <!-- Navigation bar -->
-        <header data-role="Accordion" class="standalone-header">
-          <a href="index.html" class="standalone-navlink">
-            <h1 class="standalone-text">Uhorka</h1>
-          </a>
-          <nav class="standalone-nav"></nav>
-          <div class="standalone-separator"></div>
-          <nav class="navigation-links-nav navigation-links-root-class-name12">
-            <a href="about.html" class="navigation-links-navlink">
-              <span>About</span>
-            </a>
-            <a href="log-in.html" class="navigation-links-navlink1">
-              <span>Log in</span>
-            </a>
-            <a href="register.html" class="navigation-links-navlink2">
-              <span>Register</span>
-            </a>
-            <a href="standalone.html" class="navigation-links-navlink3">
-              <span>Standalone</span>
-            </a>
-            <a href="leaderboards.html" class="navigation-links-navlink4">
-              <span>Leaderboards</span>
-            </a>
-          </nav>
-        </header>
+<div id="gameWrapper">
+  <img id="logo" src="images/logo.png" alt="Game Logo"> <!-- Logo image -->
+  <canvas id="gameCanvas" width="960" height="640"></canvas>
+  <button id="backButton" onclick="window.location.href='index.html'">Back to Home</button>
+</div>
 
-        <!-- The area with download button -->
-        <div class="standalone-container1">
-          <span class="standalone-text1">V 0.0.1</span>
-          <button type="button" class="standalone-button button"> <!-- Download button -->
-            DOWNLOAD
-          </button>
-        </div>
-      </div>
-    </div>
-  </body>
+<script src="game.js"></script>
+</body>
 </html>
